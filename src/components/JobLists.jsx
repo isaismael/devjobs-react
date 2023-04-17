@@ -35,7 +35,7 @@ export const JobLists = () => {
   return (
     <section className="job__list">
       <div className="container">
-        <div className="job__list_wrapper">
+        <div className="job__list__wrapper">
           <div className="search__panel">
             <div className="search__panel-01">
               <input
@@ -63,7 +63,7 @@ export const JobLists = () => {
               </select>
             </div>
           </div>
-          <div className="job__wrapper">
+          <div className="jobs__wrapper">
             {jobData
               ?.filter((job) => {
                 if (searchTerm === "") return job;
